@@ -1,23 +1,27 @@
-ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
+ul{
+  padding:0;
+  display:flex;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  margin:0;
   justify-content: space-evenly;
-  list-style-type: none;
-  background-color: rgb(236, 149, 217);
-  color: aliceblue;
-  padding: 10px;
-}
-
-.link {
-  cursor: pointer;
-  padding: 3px;
-  border-radius: 10px;
   text-decoration: none;
-  color: aliceblue;
-}
+  list-style-type: none;
+  background-color: chocolate;
+  color: azure;
+  padding: 10px;
 
-.link:hover {
-    background-color: white;
-    color: chocolate;
-  }
+}
+li{
+  cursor: pointer;
+  padding:3px;
+
+}
+li:hover{
+  background-color: white;
+  color: chocolate;
+  padding:3px;
+  border-radius:10px;
+}

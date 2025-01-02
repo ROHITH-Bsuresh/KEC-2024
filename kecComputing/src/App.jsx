@@ -1,35 +1,32 @@
-import "./App.css";
-import About from "./Components/FunctionComponents/About";
-import Contact from "./Components/FunctionComponents/Contact";
-import Gallery from "./Components/FunctionComponents/Gallery";
-import Home from "./Components/FunctionComponents/Home";
-import NavBar from "./Components/FunctionComponents/NavBar";
-import UseEffect from "./Components/FunctionComponents/UseEffect";
-import UseRef from "./Components/FunctionComponents/UseRef";
-import UseContext from "./Components/FunctionComponents/UseContext";
-import ExamResults from './Components/FunctionComponents/UseContext';
-import UseMemo from "./Components/FunctionComponents/UseMemo";
-import Footer from "./Components/FunctionComponents/Footer";
+import "./App.css"
+import ClassCompEg from "./Components/ClassComponents/ClassCompEg";
+import Navbar from "./Components/FunctionalComponents/Navbar";
+import Home from "./Components/FunctionalComponents/Home";
+import About from "./Components/FunctionalComponents/About";
+import Gallery from "./Components/FunctionalComponents/Gallery";
+import UseEffect from "./Components/FunctionalComponents/UseEffect";
+import UseContext from "./Components/FunctionalComponents/UseContext";
+import UseRef from "./Components/FunctionalComponents/UseRef";
+import Contact from "./Components/FunctionalComponents/Contact";
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <NavBar />
+function App(){
+  return(
+      <div>
+        <BrowserRouter>
+        <Navbar/>
         <Routes>
-          <Route path="/" element = {<Home />} />
-          <Route path="/about" element= {<About college = "Kongu Engineering" clg1 = "Kongu Arts" clg2 = "Naturopathy"/>} />
-          <Route path="/gallery" element = {<Gallery />} />
-          <Route path="/contact" element = {<Contact />} />
-          <Route path="/useeffect" element = {<UseEffect />} />
-          <Route path="/use-ref" element = {<UseRef />} />
-          <Route path="/usecontext" element = {<ExamResults />} />
-          <Route path="/usememo" element = {<UseMemo />} />
-          <Route path="/footer" element = {<Footer />} />
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About College="Kongu Engineering" clg1="Kongu Arts" clg2="Naturopathy"/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/Useeffect" element={<UseEffect/>}/>
+          <Route path="/useref" element={<UseRef/>}/>
+          <Route path="/usecontext" element={<UseContext/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
-      </BrowserRouter>
-    </div>
-  );
+        </BrowserRouter>
+        </div>
+  )
+  
 }
 export default App;
